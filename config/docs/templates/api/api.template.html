@@ -1,5 +1,5 @@
 ---
-<!--@ INCLUDE "lib/yaml.template.html" @-->
+<!--@ -INCLUDE- "lib/yaml.template.html" @-->
 title: "<@ if doc.docType == "directive" @><$ doc.name | dashCase $><@ else @><$ doc.name $><@ endif @>"
 header_sub_title: "<$ doc.docType | capital $> in module <$ doc.module $>"
 doc: "<$ doc.name $>"
@@ -40,7 +40,7 @@ docType: "<$ doc.docType $>"
 </h1>
 
 <@ if doc.codepen @>
-<!-- {% INCLUDE codepen.html id="<$ doc.codepen $>" %} -->
+<!-- {% -INCLUDE- codepen.html id="<$ doc.codepen $>" %} -->
 <@ endif @>
 <@ endblock @>
 
